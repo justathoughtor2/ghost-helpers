@@ -7,8 +7,8 @@ GhostHelpers = App.extend({
   uninstall: function() {},
 
   activate: function() {
-    this.app.helpers.register('blog-header-bg', this.handleBlogHeaderBg(image, options));
-    this.app.helpers.register('post-loop-bg', this.handlePostLoopBg(image, index, options));
+    this.ghost.helpers.register('blog-header-bg', this.handleBlogHeaderBg);
+    this.ghost.helpers.register('post-loop-bg', this.handlePostLoopBg);
   },
 
   deactivate: function() {},
